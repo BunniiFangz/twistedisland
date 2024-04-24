@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>TwistedIsland.net</title>
+
+<script>
+function startTime() {
+  var today = new Date();
+  var y = today.getFullYear();
+  var l = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var d = today.getDate();
+  var x = today.getHours();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  var n = today.getMilliseconds();
+  x = checkMeridian(h);
+  h = checkbigTime(h);
+  m = checkTime(m);
+  s = checkTime(s);
+  n = checkminiTime(n);
+  document.getElementById('time').innerHTML =
+  l [today.getMonth()] + "&nbsp" + d + "," + "&nbsp" + y + "&nbsp" + h + ":" + m + ":" + s + ":" + n + "&nbsp;" + x + ".m." ;
+  var t = setTimeout(startTime, 1);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+function checkminiTime(i) {
+  if (i < 10) {i = "0" + i}; 
+  if (i < 100) {i = "0" + i}; 
+  return i;
+}
+function checkbigTime(i) {
+  if (i > 12) {i = i - "12"}; 
+  return i;
+}
+function checkMeridian(i) {
+  if (i > 12) {i = "p"}; 
+  if (i < 12) {i = "a"}; 
+  return i;
+}
+</script>
+
+<style>
+body {background-color: lightcyan;}
+.layer {background-image: url('https://data.whicdn.com/images/107577964/original.gif');}
+.clock {
+  margin: auto;
+  width: 500px;
+  border: 8px inset;
+  background-color: white;    
+  text-align: center;
+}
+.imgcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+</head>
+
+<body onload="startTime()">
+
+<h1 align="center" style="color:indigo;">TwistedIsland.net</h1>
+
+<h2 style="color:blue;">Welcome!</h2>
+
+<marquee behavior="scroll" direction="left"><b>Hello...Hola...Bonjour...Hallo...Ciao...Oi...Halo...Zdravo...Hall&#229;...Kaixo...Helo...Ahoj...</b></marquee>
+<marquee behavior="scroll" direction="right"><b>你好...こんにちは...여보세요...Привет...سلام...हैलो ... שלום...Χαίρετε...مرحبا...Cześć...Merhaba...Salut...</b></marquee>
+
+<p>
+The official website for Twisted Island. <b>This website is currently under construction!</b></p>
+<img src="https://moronicity.org/wp-content/uploads/General_Clipart/construction-site-clipart-under-construction-sign-animated.gif" alt="Ice_Cream" width="100" height="100" class="imgcenter">
+<hr>
+
+<div class="layer">
+
+<div class="clock">
+<h1 align="center"><div id="time"></div></h1>
+</div>
+<hr>
+
+<b>Any thoughts? Let us know!</b>
+<!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16862&num=10&ts=1507948561906");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+
+<hr>
+
+<h3 id="AboutUs">About Us</h3>
+<p>Twisted Island is an upcoming animated webshow, starring a crew of anthropomorphic objects who compete challenges on a remote island for a currently unknown grand prize! The show is hosted by a slipper known as HelloKevin who is assisted by his <s>badly mistreated</s> crew, Cookie Straw, Dust Bunny, and Tape Recorder.</p>
+<p>Updated October 11, 2023.</p>
+
+</div>
+
+</body>
+</html>
