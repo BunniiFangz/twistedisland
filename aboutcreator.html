@@ -24,33 +24,32 @@ marquee  {color: mediumpurple;}
 div.list {
   margin-left:auto;
   margin-right:auto;
-  text-align: center;
   background-color: #150047;
   border: 2px solid aquamarine;
   width: 400px;
+  padding: 0px 10px 0px 10px;
 }
 
 div.full {
   width: 100%;
   float: top;
+  display: flex;
 }
 
 div.listleft {
-  text-align: center;
   background-color: #150047;
-  max-width: 40%;
-  float: left top;
+  width: 30%;
   border: 2px solid aquamarine;
-  padding: 0px 10px 0px 0px;
+  padding: 0px 10px 0px 10px;
+  margin-left: auto;
 }
 
 div.listright {
-  text-align: center;
   background-color: #150047;
-  max-width: 40%;
-  float: right top;
+  width: 30%;
   border: 2px solid aquamarine;
-  padding: 0px 10px 0px 0px;
+  padding: 0px 10px 0px 10px;
+  margin-right: auto;
 }
 
 ul.reg {
@@ -59,16 +58,16 @@ ul.reg {
 }
 
 div.menu {
-  float: top;
   text-align: top;
-  max-width: 200px;
+  width: 200px;
   background-color: #d1d1fc;
   padding: 10px;
   border: 2px solid #fc4b9b;
+  margin-left: 40px;
+  position: fixed;
 }
 div.hewwo {
-  float: right;
-  padding: 0px 10px;
+  padding: 0px 15px;
   width: auto;
 }
 div.intro {
@@ -83,7 +82,7 @@ border: 2px solid mediumpurple;
 a:link {
   color: white;
   background-color: mediumpurple;
-  border: 2px outset mediumpurple;
+  border: 3px outset mediumpurple;
   text-decoration: none;
   padding: 2px;
 }
@@ -91,7 +90,7 @@ a:link {
 a:visited {
   color: white;
   background-color: hotpink;
-  border: 2px outset hotpink;
+  border: 3px outset hotpink;
   text-decoration: none;
   padding: 2px;
 }
@@ -99,7 +98,7 @@ a:visited {
 a:hover {
   color: white;
   background-color: cornflowerblue;
-  border: 2px outset cornflowerblue;
+  border: 3px outset cornflowerblue;
   text-decoration: underline;
   padding: 2px;
 }
@@ -107,7 +106,7 @@ a:hover {
 a:active {
   color: yellow;
   background-color: mediumpurple;
-  border: 2px inset mediumpurple;
+  border: 3px inset mediumpurple;
   text-decoration: underline;
   padding: 2px;
 }
@@ -117,18 +116,12 @@ a:active {
 
 <body onload="startTime()">
 
-<h1 align="center" style="color:aquamarine; background-color: black; border: 2px solid #fc4b9b; font-family: Helvetica; font-style: italic;" id="Top">About BunniiFangz!</h1>
+<h1 align="center" style="color:aquamarine; background-color: black; border: 2px solid #fc4b9b; font-family: Helvetica; font-size: 40px; padding: 10px; font-style: italic;" id="Top">About BunniiFangz!</h1>
 
 <marquee behavior="scroll" direction="left" style="background-color: black; padding: 12px 0px 6px 0px;"><b>This site is a VERY EARLY wip. Please check back for more updates soon.</b></marquee>
 <marquee behavior="scroll" direction="right" style="background-color: black; padding: 12px 0px 6px 0px;"><b>This site is a VERY EARLY wip. Please check back for more updates soon.</b></marquee>
 
 <br><br>
-<div class="full">
-<div class="hewwo">
-<h3 align="center" style="color: #d2aaf7;">
-Welcome to my homepage y'all! Everything ya need to know about me is here.</h3>
-<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWQ3cDY0bHpkc3RvdDg4emdpbmhzMWFscGw2cG1mc2IxNXBmb2V4MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/gkLG3Ki3OTXDwVb4rY/giphy.gif" alt="Kuro"  height="220" class="imgcenter">
-</div>
 
 <div class="menu">
 <h3 align="center">Jump to...</h3>
@@ -138,7 +131,15 @@ Welcome to my homepage y'all! Everything ya need to know about me is here.</h3>
 <p><a href="#Boundaries">Personal Boundaries</a></p>
 <p><a href="#Shop">Shop</a></p>
 <p><a href="#Contact">Contact Me!</a></p>
-</div></div>
+</div>
+
+<div class="hewwo">
+<h3 align="center" style="color: #d2aaf7;">
+Welcome to my homepage y'all! <br> Everything ya need to know about me is here.</h3>
+<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWQ3cDY0bHpkc3RvdDg4emdpbmhzMWFscGw2cG1mc2IxNXBmb2V4MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/gkLG3Ki3OTXDwVb4rY/giphy.gif" alt="Kuro"  height="200" class="imgcenter">
+</div>
+
+
 
 <hr>
 
@@ -161,7 +162,7 @@ Welcome to my homepage y'all! Everything ya need to know about me is here.</h3>
 
 <br>
 <div class="list">
-<h3>Main Current Interests</h3>
+<h3 align="center">Main Current Interests</h3>
 <ul class="reg"><li>object shows (mainly II and BFDI)</li>
 <li>furry stuff in general</li>
 <li>Smiling Friends</li>
@@ -171,7 +172,7 @@ Welcome to my homepage y'all! Everything ya need to know about me is here.</h3>
 </div><br>
 
 <div class="list">
-<h3>Kin List</h3>
+<h3 align="center">Kin List</h3>
 <ul class="reg"><li>Mae Borowski</li>
 <li>Trixie Glimmer Smith</li>
 <li>Retsuko</li>
@@ -181,7 +182,7 @@ Welcome to my homepage y'all! Everything ya need to know about me is here.</h3>
 </div><br>
 
 <div class="list">
-<h3>Favorite Music Genres</h3>
+<h3 align="center">Favorite Music Genres</h3>
 <ul class="reg"><li>hard rock</li>
 <li>new wave</li>
 <li>pop from the 70s-2000s, especially 80s</li>
@@ -195,7 +196,7 @@ Welcome to my homepage y'all! Everything ya need to know about me is here.</h3>
 </div><br>
 
 <div class="list">
-<h3>Favorite Aesthetics</h3>
+<h3 align="center">Favorite Aesthetics</h3>
 <ul class="reg"><li>vaporwave</li>
 <li>goth</li>
 <li>kawaii</li>
@@ -218,16 +219,16 @@ Welcome to my homepage y'all! Everything ya need to know about me is here.</h3>
 <hr>
 
 <h2 id="Content" align="center" style="font-style: italic;"><u>Creations, Worlds, and Characters</u></h3>
-<p>Content warning some of my content may have triggering themes, viewer discretion advised, my content is NOT intended for or geared to younger children. It is chiefly intended for young adults and teens. It is the responsibility of the audience to keep this in mind before consuming my content.</p>
+<div class="intro" style:"max-width: 500px;"><p><b>CONTENT WARNING:</b> Some of my content may have triggering themes, viewer discretion advised, my content is NOT intended for or geared to younger children. It is chiefly intended for young adults and teens. It is the responsibility of the audience to keep this in mind before consuming my content.</p>
 <p>Current Projects: <b>Twisted Island, Mitzi, Bloody Paws</b></p>
 
-<h3 style="font-style: italic;">Commissions coming soon!</h3><br>
+<h3 style="font-style: italic;">Commissions coming soon!</h3></div><br>
 
 <h3 align="center">Rules about interacting with my characters/properties:</h3>
 
-<div class="full">
+<div class="full" style= "column-gap: 40px;">
 <div class="listleft">
-<h3>CAN:</h3>
+<h3 align="center">CAN:</h3>
 <ul class="reg"><li>Reupload my art WITH CREDIT</li>
 <li>Use my artwork as your pfp, header, backgrount, etc. WITH CREDIT</li>
 <li>Retweet/reblog my content.</li>
@@ -238,7 +239,7 @@ Welcome to my homepage y'all! Everything ya need to know about me is here.</h3>
 </div>
 
 <div class="listright">
-<h3>CANNOT</h3>
+<h3 align="center">CANNOT:</h3>
 <ul class="reg"><li>Use my content in any of the previous ways without credit.</li>
 <li>Claim any of my characters, worlds, or other content as your own.</li>
 <li>Crop/edit any of my art to remove my signature</li>
@@ -256,13 +257,14 @@ Welcome to my homepage y'all! Everything ya need to know about me is here.</h3>
 <hr>
 
 <h2 id="Boundaries" align="center" style="font-style: italic;"><u>Personal Boundaries</u></h3>
-<p>Warnings about interacting with me: <br>
-I very often cuss and freely discuss and joke about dark topics.</p>
+<div class="intro" style:"max-width: 500px;"><p align="center"><b>Warnings about interacting with me:</b></p>
+<p style:"padding: 10px;">I very often cuss and freely discuss and joke about dark topics.<br><br> I will be very aggressive about opinions/topics that I'm passionate about if brought up.<br><br> Authority figures who misuse their power piss me off. I WILL push back against this.<br><br> I support people's freedom to make art with triggering/taboo themes as long as it is not used to endanger people IRL.</p>
 
-<p>DO NOT call me just so you can get my attention. Only call me if you actually intend to VC. Also, do not excessively ping me just for my attention either.<p>
+<p><b>DO NOT</b> call me just so you can get my attention. Only call me if you actually intend to VC. Also, do not excessively ping me just for my attention either.<p></div><br>
 
 <div class="list">
-<h2 style="color: #fc0000;">DNI (ok you can interact but I WILL curbstomp you)</h2>
+<h2 align="center" style="color: #fc0000;">DO NOT INTERACT</h2>
+<h3 align="center" style="color: #fc0000;">(ok you can interact but I WILL curbstomp you)</h2>
 
 <ul class="reg"><li>pedos (including loli/shota)</li>
 <li>zoos</li>
@@ -272,19 +274,19 @@ I very often cuss and freely discuss and joke about dark topics.</p>
 <li>anti-objectum</li>
 <li>pro-harassment or anti-recovery</li>
 <li>pro Trump or Erdogan</li>
-<li>accounts that are minor-DNI. I'm not a minor myself but I'm not comfortable interacting with these accounts.</li>
+<li>Accounts that are minor-DNI. I'm not a minor myself but I'm not comfortable interacting with these accounts.</li>
 <li>racists</li>
 <li>sexists</li>
 <li>anti-lgbtq</li>
 <li>pro Israel or Azerbaijan</li>
 <li>anti-socialist</li>
 <li>kinkshamers</li>
-<li>TANTUSAR, come at me motherfucker</li>
+<li><b>TANTUSAR</b>, come at me motherfucker</li>
 <li>people who shame “cringey people”</li>
 <li>if you push your religion, doesn't matter which one</li>
 <li>fatphobes</li>
 <li>draw or support race swap art/edits (that shit makes me very uncomfortable)</li>
-<li>those filthy degenerate right-wing wannabe-edgelords (mostly from 4chan such)</li>
+<li>those filthy degenerate right-wing wannabe-edgelords (mostly from 4chan & such)</li>
 <li>incels (often also the latter)</li>
 <li>people who constantly bring up politics or race relations</li>
 <li>anti sex worker</li>
@@ -293,7 +295,7 @@ I very often cuss and freely discuss and joke about dark topics.</p>
 <li>pro-censorship or internet sanitization</li>
 </ul>
 
-<p><b>I MAY MAKE EXCEPTIONS TO SOME OF THESE FOR CLOSE FRIENDS</b></p>
+<p align="center"><b>I MAY MAKE EXCEPTIONS TO SOME OF THESE FOR CLOSE FRIENDS</b></p>
 </div>
 <p align="right"><a href="#Top">↑ Back to Top ↑</a></p>
 <hr>
