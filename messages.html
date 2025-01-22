@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="en"
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>TwistedIsland.net</title>
+
+<script>
+function startTime() {
+  var today = new Date();
+  var y = today.getFullYear();
+  var l = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var d = today.getDate();
+  var x = today.getHours();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  var n = today.getMilliseconds();
+  x = checkMeridian(h);
+  h = checkbigTime(h);
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time').innerHTML =
+  l [today.getMonth()] + "&nbsp" + d + "," + "&nbsp" + y + "&nbsp" + h + ":" + m + ":" + s + "&nbsp;" + x + ".m." ;
+  var t = setTimeout(startTime, 1);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+function checkbigTime(i) {
+  if (i > 12) {i = i - "12"}; 
+  return i;
+}
+function checkMeridian(i) {
+  if (i > 12) {i = "p"}; 
+  if (i < 12) {i = "a"}; 
+  return i;
+}
+</script>
+
+<style>
+body {
+  background-image: url('https://raw.githubusercontent.com/BunniiFangz/twistedisland/refs/heads/main/assets/IMG_8219.PNG');
+  font-family: Helvetica, sans-serif;
+}
+
+.layer {background-image: url('https://data.whicdn.com/images/107577964/original.gif');}
+
+.maxblock {
+  height: 100%;
+  width: 100%;
+  float: top;
+  padding: 10px;
+}
+
+.whole {
+  background-color: white; 
+  height: 100%;
+  width: 80%;
+  float: top;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.whole::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.topbar {
+  background-color: gainsboro;
+  height: 200px;
+  width: 100%;
+  float: top;
+}
+
+.tabbar {
+  background-color: grey;
+  height: 50px;
+  width: 100%;
+  float: top;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightsection {
+  background-color: linen;
+  height: 100%;
+  width: 200px;
+  float: right;
+  margin-right: 10px;
+  text-align: center;
+  padding: 10px; 
+  border: 2px solid dimgrey;
+}
+
+.clock {
+  float: right;
+  width: 300px;
+  border: 6px inset;
+  background-color: white;    
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.imgcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+a.current {
+  width: 14%;
+  height: 100%;
+  text-align: center;
+  padding: 0px;
+  font-family: "Ad Lib", Helvetica, sans-serif;
+  font-size: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  background-color: hotpink;
+  border: 3px outset hotpink;
+  text-decoration: none;
+  padding: 0px;
+}
+
+a.tab {
+  width: 14%;
+  height: 100%;
+  text-align: center;
+  padding: 0px;
+  font-family: "Ad Lib", Helvetica, sans-serif;
+  font-size: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.tab:link {
+  color: white;
+  background-color: mediumpurple;
+  border: 3px outset mediumpurple;
+  text-decoration: none;
+  padding: 0px;
+}
+
+a.tab:visited {
+  color: white;
+  background-color: mediumpurple;
+  border: 3px outset mediumpurple;
+  text-decoration: none;
+  padding: 0px;
+}
+
+a.tab:hover {
+  color: white;
+  background-color: cornflowerblue;
+  border: 3px outset cornflowerblue;
+  text-decoration: underline;
+  padding: 0px;
+}
+
+a.tab:active {
+  color: yellow;
+  background-color: mediumpurple;
+  border: 3px inset mediumpurple;
+  text-decoration: underline;
+  padding: 0px;
+}
+</style>
+
+</head>
+
+<body onload="startTime()">
+
+<div class="whole">
+<div class="topbar">
+
+<img src="https://raw.githubusercontent.com/BunniiFangz/twistedisland/refs/heads/main/assets/Logo%20Crew%201.png" alt="Logo" width="auto" height="90%" class="logo">
+
+<div class="clock">
+<p align="center"><div id="time"></div></p>
+</div>
+
+</div>
+
+<div class="tabbar">
+<a class="tab" href="https://twistedisland.net/">Home</a>
+<a class="tab" href="https://twistedisland.net/characters">Characters</a>
+<a class="tab" href="https://twistedisland.net/vote">Vote!</a>
+<a class="tab" href="https://twistedisland.net/episodes">Episodes</a>
+<a class="current" href="https://twistedisland.net/messages">Messages</a>
+<a class="tab" href="https://twistedisland.net/shop">Shop</a>
+<a class="tab" href="https://twistedisland.net/aboutus">About Us</a>
+</div>
+
+<div class="maxblock">
+<div class="rightsection">
+
+<p><b>This website is currently under construction!</b></p>
+<img src="https://moronicity.org/wp-content/uploads/General_Clipart/construction-site-clipart-under-construction-sign-animated.gif" alt="Construction" width="100" height="100" class="imgcenter">
+<hr>
+<p>We're doing our best :,)</p>
+</div>
+
+<p>*Insert comment box here.*</p>
+<p>Updated January 22, 2025.</p>
+
+</div>
+</div>
+
+</body>
+</html>
