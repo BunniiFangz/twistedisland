@@ -188,6 +188,73 @@ a.tab:active {
   text-decoration: underline;
   padding: 0px;
 }
+
+form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            border: 1px solid #c4c1bb;
+            border-radius: 3px;
+        }
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Styling form-control input, 
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+        /* Styling form-control Radio 
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        /* Styling Button */
+        button {
+            background-color: #05c46b;
+            border: 4px outset #05c46b;
+            font-family: "Ad Lib", Helvetica, sans-serif;
+            font-size: 30px;
+            color: white;
+            display: block;
+            width: 160px;
+            margin: 20px auto;
+        }
+button:hover {
+  background-color: cornflowerblue;
+  border: 4px outset cornflowerblue;
+  text-decoration: underline;
+}
+
+button:active {
+  color: yellow;
+  background-color: cornflowerblue;
+  border: 4px inset cornflowerblue;
+  text-decoration: underline;
+}
+
 </style>
 
 </head>
@@ -224,9 +291,77 @@ a.tab:active {
 <p>We're doing our best :,)</p>
 </div>
 
-<p>*Insert current voting options here.*</p>
-<p style="color:gray; font-size: 6px;">Updated January 22, 2025.</p>
-<p style="color:gray; font-size: 6px;">© 2024 by Usagi Animation LLC. All Rights Reserved.</p>
+    <form id="form">
+
+        <!-- Details -->
+
+        <div class="form-control">
+            <label>Which characters do you want to see compete on Twisted Island?<br>
+                <small>(You can check multiple characters!)</small><br><br>
+                <i>Note: Polling is not yet functional. Please wait for updates.</i><br><br>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox" name="inp">Placeholder A
+                  </input>
+              </label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">Placeholder B
+                  </input>
+            </label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">Placeholder C
+                  </input>
+            </label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Placeholder D
+                  </input>
+            </label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">Placeholder E
+                  </input>
+            </label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp">Placeholder F
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Placeholder G
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Placeholder H
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Placeholder I
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Placeholder J
+                  </input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label for="comment">
+                Any comments about any characters?
+            </label>
+
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment" 
+                      placeholder="Enter your comment here">
+            </textarea>
+        </div>
+
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+
+<p style="color:gray; font-size: 8px;">Updated 8 February 2025.</p>
+<p style="color:gray; font-size: 8px;">© 2025 by Usagi Animation LLC. All Rights Reserved.</p>
 
 </div>
 </div>
