@@ -1,0 +1,154 @@
+/* BG color image */
+body {
+	background-image: url('https://raw.githubusercontent.com/BunniiFangz/twistedisland/refs/heads/main/assets/IMG_8219.PNG');
+	font-family: Helvetica, sans-serif;
+}
+
+/* Top graphic */
+.layer {
+	background-image: url('https://data.whicdn.com/images/107577964/original.gif');
+}
+
+.maxblock {
+	height: 100%;
+	width: 100%;
+	float: top;
+	padding: 10px;
+}
+
+.whole {
+	background-color: white; 
+	height: 100%;
+	width: 80%;
+	float: top;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.whole::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.topbar {
+	background-color: gainsboro;
+	height: 200px;
+	width: 100%;
+	float: top;
+}
+
+.tabbar {
+	background-color: grey;
+	height: 50px;
+	width: 100%;
+	float: top;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rightsection {
+	background-color: linen;
+	height: 100%;
+	width: 200px;
+	float: right;
+	margin-right: 10px;
+	text-align: center;
+	padding: 10px; 
+	border: 2px solid dimgrey;
+}
+
+.clock {
+	float: right;
+	width: 220px;
+	border: 6px inset;
+	background-color: white;    
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.imgcenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logo {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+
+a.current {
+	width: 14%;
+	height: 100%;
+	text-align: center;
+	padding: 0px;
+	font-family: "Ad Lib", Helvetica, sans-serif;
+	font-size: 25px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: white;
+	background-color: hotpink;
+	border: 3px outset hotpink;
+	text-decoration: none;
+	padding: 0px;
+}
+
+a.tab {
+	width: 14%;
+	height: 100%;
+	text-align: center;
+	padding: 0px;
+	font-family: "Ad Lib", Helvetica, sans-serif;
+	font-size: 25px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+a.tab:link {
+	color: white;
+	background-color: mediumpurple;
+	border: 3px outset mediumpurple;
+	text-decoration: none;
+	padding: 0px;
+}
+
+a.tab:visited {
+	color: white;
+	background-color: mediumpurple;
+	border: 3px outset mediumpurple;
+	text-decoration: none;
+	padding: 0px;
+}
+
+a.tab:hover {
+	color: white;
+	background-color: cornflowerblue;
+	border: 3px outset cornflowerblue;
+	text-decoration: underline;
+	padding: 0px;
+}
+
+a.tab:active {
+	color: yellow;
+	background-color: mediumpurple;
+	border: 3px inset mediumpurple;
+	text-decoration: underline;
+	padding: 0px;
+}
+
+footer {
+	font-size: .70em;
+	text-align: center;
+}
