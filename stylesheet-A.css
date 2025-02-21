@@ -84,7 +84,7 @@ body {
 	margin-left: 20px;
 }
 
-a.current {
+a.current, a.tab {
 	width: 14%;
 	height: 100%;
 	text-align: center;
@@ -95,7 +95,9 @@ a.current {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
 
+a.current {
 	color: white;
 	background-color: hotpink;
 	border: 3px outset hotpink;
@@ -104,48 +106,33 @@ a.current {
 }
 
 a.tab {
-	width: 14%;
-	height: 100%;
-	text-align: center;
-	padding: 0px;
-	font-family: "Ad Lib", Helvetica, sans-serif;
-	font-size: 25px;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-a.tab:link {
-	color: white;
-	background-color: mediumpurple;
-	border: 3px outset mediumpurple;
-	text-decoration: none;
 	padding: 0px;
 }
 
-a.tab:visited {
+a.tab:link, a.tab:visited, a.tab:hover {
 	color: white;
-	background-color: mediumpurple;
-	border: 3px outset mediumpurple;
+}
+
+a.tab:link, a.tab:visited, a.tab:active {
+	background-color: mediumpurple; /* Must be duplicated to override hover */
+}
+	
+a.tab:link, a.tab:visited {
 	text-decoration: none;
-	padding: 0px;
+	border: 3px outset mediumpurple;
 }
 
 a.tab:hover {
-	color: white;
 	background-color: cornflowerblue;
 	border: 3px outset cornflowerblue;
 	text-decoration: underline;
-	padding: 0px;
 }
 
 a.tab:active {
 	color: yellow;
-	background-color: mediumpurple;
+	background-color: mediumpurple; /* Double override, duplicated intentionally */
 	border: 3px inset mediumpurple;
 	text-decoration: underline;
-	padding: 0px;
 }
 
 form {
@@ -201,7 +188,7 @@ form {
             width: 160px;
             margin: 20px auto;
         }
-
+		
 footer {
 	font-size: .70em;
 	text-align: center;
