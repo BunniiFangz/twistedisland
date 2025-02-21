@@ -1,6 +1,7 @@
 /* BG color image */
 body {
-	background-image: url('https://raw.githubusercontent.com/BunniiFangz/twistedisland/refs/heads/main/assets/IMG_8219.PNG');
+	background-color: #84CDF6; /* For browsers that do not support gradients */
+	background-image: linear-gradient(#84CDF6, #ADEAFE);
 	font-family: Helvetica, sans-serif;
 }
 
