@@ -1,91 +1,105 @@
 <!DOCTYPE html>
 
-<html lang="en"
+<html lang="en">
 
 <head>
+	<meta charset="UTF-8">
+	<meta name="keywords" 
+		content="twisted island, twisted, island, BFDI, cartoon, OSC, inanimate, inanimate insanity, usagi animation, usagi, comedy, drama, competition, animation, anime, object show, total drama, hellokevin, dust bunny, pokey, neven" />
+	<title>Episodes - Twisted Island</title>
+	<link rel="icon" type="image/x-icon" href="assets/tabicon_1.png">
+	<link rel="stylesheet" href="Stylesheet Reset.css">
+	<link rel="stylesheet" href="Stylesheet Main.css">
 
-<meta charset="UTF-8">
-
-<title>Episodes - Twisted Island</title>
-
-    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/BunniiFangz/twistedisland/refs/heads/main/assets/Weblogo%201.png">
-    
-    <link rel="stylesheet" href="https://twistedisland.net/stylesheet-A.css">
-
-<script>
-function startTime() {
-  var today = new Date();
-  var y = today.getFullYear();
-  var l = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-  var d = today.getDate();
-  var x = today.getHours();
-  var h = today.getHours();
-  var m = today.getMinutes();
-  var s = today.getSeconds();
-  var n = today.getMilliseconds();
-  x = checkMeridian(h);
-  h = checkbigTime(h);
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('time').innerHTML =
-  l [today.getMonth()] + "&nbsp" + d + "," + "&nbsp" + y + "&nbsp" + h + ":" + m + ":" + s + "&nbsp;" + x + ".m." ;
-  var t = setTimeout(startTime, 1);
-}
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
-}
-function checkbigTime(i) {
-  if (i > 12) {i = i - "12"}; 
-  return i;
-}
-function checkMeridian(i) {
-  if (i > 12) {i = "p"}; 
-  if (i < 12) {i = "a"}; 
-  return i;
-}
-</script>
-
+	<script src="clock 1.0.js"></script>
 </head>
 
 <body onload="startTime()">
+	
+	<div class="page">
+	
+		<header>
+			<a href="index.html" class="logo">
+				<img src="assets/logo_crew_3.png" alt="Logo" class="logo-img">
+			</a>
+		
+			<a href="episodes.html" class="thumb">
+				<img src="assets/Thumbnail_Placeholder.png" alt="Thumbnail" class="thumb-img">
+			</a>
+			
+			<div class="rightcell">
+				<div class="clock">
+					<p align="center"><div id="time"></div></p>
+				</div>
 
-<div class="whole">
-<div class="topbar">
+				<div class="searchbar">
+					<div class="subsearch">
+						<label for="name">Search</label><br>
+						<input name="search" id="search" type="text" required>
+					</div>
+					<input type="submit" id="gobutton" value="Go">
+				</div>
+			</div>
+		</header>
 
-<img src="https://raw.githubusercontent.com/BunniiFangz/twistedisland/refs/heads/main/assets/Logo%20Crew%201.png" alt="Logo" width="auto" height="90%" class="logo">
+		<nav>
+			<ul>
+				<li><a class="tab" href="index.html">Home</a></li>
+				<li><a class="tab" href="characters.html">Characters</a></li>
+				<li><a class="tab" href="vote.html">Vote!</a></li>
+				<li><a class="current" href="episodes.html">Episodes</a></li>
+				<li><a class="tab" href="messages.html">Messages</a></li>
+				<li><a class="tab" href="shop.html">Shop</a></li>
+				<li><a class="tab" href="about_us.html">About Us</a></li>
+			</ul>
+		</nav>
 
-<div class="clock">
-<p align="center"><div id="time"></div></p>
-</div>
+	
+		<aside class="right">
+			<p style="text-align: center;"><b>This website is currently under construction!</b></p>
+			<img src="https://moronicity.org/wp-content/uploads/General_Clipart/construction-site-clipart-under-construction-sign-animated.gif" alt="Under Construction" class="rightimg">
+			<br><br>
+			<p style="text-align: center;">We're doing our best :,)</p>
+			<br><hr><br>
+			<p>Twisted Island created by BunniiFangz</p><br>
+			<p>Series directed by BunniiFangz, Freshyvo, and STAnimator</p><br>
+			<p>Series inspired by "Inanimate Insanity" by Adam Katz and "Battle for Dream Island” by Michael and Cary Huang.</p>
+		</aside>
 
-</div>
+		<aside class="left">
+			<p class="newep">NEWEST EPISODE!</p>
+				<a href="https://www.youtube.com/@bunniifangz">
+					<img src="assets/Thumbnail_Placeholder.png" alt="newthumb" class="newthumb">
+				</a>
+			<hr>
+			<p class="epname">"A New Home"</p>
+			
+			<p style="text-align: left; margin: 0px 5px;">Wealthy billionaire HelloKevin has it all in his life: money, fame, booze, women- well scratch that last one. But when he stumbles upon an orphan in need, is he ready to take on the responsibility of fatherhood? </p>
+		</aside>
+		<div class="main">
+			<div class="imgbox"><img src="assets/char_cards/pokey_card.png" alt="Pokey" class="char_card" ></div>
+			<p class="comicep">New episodes under production! Hang in there!<br></p>
+			<p></p>
+		</div>
 
-<div class="tabbar">
-<a class="tab" href="https://twistedisland.net/">Home</a>
-<a class="tab" href="https://twistedisland.net/characters">Characters</a>
-<a class="tab" href="https://twistedisland.net/vote">Vote!</a>
-<a class="current" href="https://twistedisland.net/episodes">Episodes</a>
-<a class="tab" href="https://twistedisland.net/messages">Messages</a>
-<a class="tab" href="https://twistedisland.net/shop">Shop</a>
-<a class="tab" href="https://twistedisland.net/aboutus">About Us</a>
-</div>
-
-<div class="maxblock">
-<div class="rightsection">
-
-<p><b>This website is currently under construction!</b></p>
-<img src="https://moronicity.org/wp-content/uploads/General_Clipart/construction-site-clipart-under-construction-sign-animated.gif" alt="Construction" width="100" height="100" class="imgcenter">
-<hr>
-<p>We're doing our best :,)</p>
-</div>
-
-<p>Season 1 coming 2025.</p>
-<p style="color:gray; font-size: 8px;">Updated 8 February 2025.</p>
-<p style="color:gray; font-size: 8px;">© 2025 by Usagi Animation LLC. All Rights Reserved.</p>
-
-</div>
-</div>
+		<footer>
+			<table>
+				<tbody>
+					<tr>
+						<th rowspan="2"><img src="assets/usagi_logo_black.png" alt="company_logo" class="company"></th>
+						<td colspan="3">contact us: <a href="https://twitter.com/AnimationUsagi">twitter</a> | <a href="https://www.youtube.com/@bunniifangz">youtube</a> | <a href="">Tumblr</a></td>
+					</tr>
+					<tr>
+						<td colspan="3">Updated 15 December 2025.<br>
+						© 2025 by Usagi Animation LLC. All Rights Reserved.</td>
+					</tr>
+				</tbody>
+			</table>
+		</footer>
+		
+	</article>
+	
+	</div>
 
 </body>
 </html>
